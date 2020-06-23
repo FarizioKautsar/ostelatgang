@@ -50,7 +50,7 @@ void display(int entry) {
     // akunGH2[progs[03] TIME[18] MUTEX[05] MMAP[OPEN] [akunGH1][akunGH3][akunGH0][akunGH2]]
     mymap -> mutexctr++;
     mymap -> progs[entry].stamp++;
-    printf("%s[progs[%d] TIME[%d] MUTEX[%d] MMAP[%s] ",akunGitHub, entry ,mymap -> mutexctr , mymap -> progs[entry].stamp , "OPEN");
+    printf("%s[progs[%.2d] TIME[%.2d] MUTEX[%.2d] MMAP[%s] ",akunGitHub, entry ,mymap -> mutexctr , mymap -> progs[entry].stamp , "OPEN");
 
     for(int x = 0 ; x < mymap -> entry; x++){
         if(mymap -> progs[x].akun == NULL){
