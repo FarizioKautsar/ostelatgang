@@ -7,7 +7,7 @@
 #
 # Berikut, dua baris sebelum script (ganti "cbkadal" dengan akun GitHub anda):
 #
-export akunGitHub="cbkadal"
+export akunGitHub="andrewtheodore"
 #
 export PSTAMP="TMP1=\"\$(date +%y%m%d-%H%M%S)\"; TMP2=\"\$(sleep 1;echo \$TMP1-\$akunGitHub-\${PWD##*/}|sha1sum|cut -c1-4)\"; echo \"\$TMP1-\$TMP2-\${PWD##*/}/> \";";
 
