@@ -1,0 +1,154 @@
+####################################
+# REV04 Tue Jun 23 11:55:41 WIB 2020
+# REV01 Mon Jun 22 11:33:25 WIB 2020
+# START Mon Jun 22 00:01:58 WIB 2020
+# Berkas:
+#   "0000-INFO-KELOMPOK-TAHAP-2.txt"
+##############################################
+Petunjuk ini akan diperbaharui secara berkala!
+Harap cek tanggal/jam revisi di atas.
+##############################################
+
+
+***** INFO (KELOMPOK) KELAS A, B, C, M (TUG2) *****
+
+BAGIAN A: ISTILAH
+=================
+1. "akunGitHub" -- Nama akun yang digunakan untuk mengakses GitHub.com.
+== PERHATIAN: Sebelumnya, juga menggunakan istilah "GitHubUser".
+
+2. "PRIBADI"    -- Proyek OS201 pribadi, yaitu 
+== == https://github.com/akunGitHun/os201/
+== a. "UAS-PRIBADI/" -- Folder "UAS/" dalam "PRIBADI".
+== b. "UAS-PRIBADI/.dummy" -- Berkas "UAS/.dummy" dalam "PRIBADI".
+== c. "WEB-PRIBADI/" -- situs GitHub page pribadi 
+== == https://akunGitHub.github.io/os201/.
+
+3. "BERSAMA" -- Proyek OS201 bersama, yaitu 
+== == https://github.com/UI-FASILKOM-OS/os201/.
+== a. "UAS-BERSAMA/" -- Folder "UAS/" dalam "BERSAMA".
+== b. "UAS-BERSAMA/.dummy" -- Berkas "UAS/.dummy" dalam "BERSAMA".
+
+4. "UAS-KELOMPOK" == "BERSAMA/UAS-KELOMPOK"
+== a. "KELOMPOK/INFO" berkas ini:
+https://github.com/UI-FASILKOM-OS/os201/blob/master/UAS-KELOMPOK/0000-INFO-KELOMPOK-TAHAP-2.txt.asc
+== b. "KELOMPOK/TUGAS":
+https://github.com/UI-FASILKOM-OS/os201/blob/master/UAS-KELOMPOK/0001-TUGAS-2.tar.bz2.asc
+
+5. Passphrase: lihat "WhatsApp Group".
+
+
+BAGIAN B: INFO TUGAS2
+=====================
+
+1. Pembentukan Kelompok: Senin, 22-Juni-2020.
+
+2. Pengumuman Tugas 2: Selasa, 23-Juni-2020, jam 10:00.
+
+3. Batas Waktu Pengumpulan (DEADLINE): Rabu, 23-Juni-2020, jam 10:01.
+=== Harap berhenti PUSH sebelum batas waktu tersebut.
+
+
+BAGIAN C: BERKAS YANG DIKUMPULKAN
+=================================
+
+1. Harap push ke "UAS-PRIBADI/" dengan lengkap:
+== 0000-mypub.txt
+== 0001-mytest.txt
+== 0002-mytest.txt.asc
+== 0003-CEK-PAS0.txt
+== 0004-TUGAS-PAS1.txt
+== 0005-KODE-ETIK.txt.asc
+== 0006-TUGAS-2.tar.bz2.asc
+== 0006-TUGAS-2.tar.bz2.asc.asc
+== 0007-CEK-PAS1.txt
+== SHA1SUM
+== SHA1SUM.asc
+
+2. TANPA AMPUN:
+== a. nama harus sama dengan di atasi
+== b. harap COMMIT sebelum DEADLINE.
+== c. TERUTAMA: harap PUSH sebelum DEADLINE.
+
+3. Hitung "sha1sum" serta masukkan ke berkas "SHA1SUM" dengan lengkap:
+== 0000-mypub.txt
+== 0001-mytest.txt
+== 0002-mytest.txt.asc
+== 0003-CEK-PAS0.txt
+== 0004-TUGAS-PAS1.txt
+== 0005-KODE-ETIK.txt.asc
+== 0006-TUGAS-2.tar.bz2.asc
+
+4. TANPA AMPUN:
+== a. nama harus sama dengan di atasi
+== b. SETIAP mengubah berkas, harap menghitung kembali SHA1SUM.
+== c. SETIAP mengubah berkas, harap tandatangan ulang (dettached, arrmor) SHA1SUM.asc
+
+5. CEK dan CROSS CEK:
+== a. Yang akan diperiksa, berkas anda yang di GitHub.
+== b. Pastikan, berkas yang di-push, sama dengan berkas anda di PC!
+== c. Lakukan verifikasi.
+
+
+BAGIAN D: REVISI PEKERJAAN
+==========================
+
+TBA.
+
+
+BAGIAN E: TANYA-JAWAB
+=====================
+1. Gunakan SCELE untuk tanja-jawab UMUM. Pada saat ujian, SCELE akan lebih sering dibaca. Pada saat tidak ujian, biasanya SCELE hanya dibaca beberapa kali seminggu.
+
+2. Gunakan satu thread untuk satu kasus. Penumpukan/ pembajakan thread hanya akan membingungkan.
+
+3. Gunakan mailto:eoperatingsystems@vlsm.org untuk komunikasi pribadi. Subjek EMAIL agar ada [HELP].
+
+4. TBA.
+
+
+BAGIAN F: URL
+=============
+
+1. Pelajari Tiga Script Berikut ini
+https://scele.cs.ui.ac.id/mod/forum/discuss.php?d=19596
+2. Git/GitHub: Kondisi Balapan Saat COMMIT
+https://rahmatm.samik-ibrahim.vlsm.org/2020/06/gitgithub-kondisi-balapan-saat-commit.html
+3. TBA.
+
+
+BAGIAN G: PEMBENTUKAN KELOMPOK
+==============================
+
+1. Agar keanggotaan lebih merata, pembentukan kelompok dilakukan secara bertahap.
+
+2. Pendaftaran anggota kelompok tidak dapat diwakilkan.
+
+3. Pada awalnya, dalam /UAS-KELOMPOK/ akan dibuka 20 berkas TXT.
+
+4. Setiap berkas untuk masing-masing kelompok yaitu K80 hingga K99.
+
+== K80.txt, K81.txt, K82.txt, K83.txt, K84.txt,
+== K85.txt, K86.txt, K87.txt, K88.txt, K89.txt,
+== K90.txt, K91.txt, K92.txt, K93.txt, K94.txt,
+== K95.txt, K96.txt, K97.txt, K98.txt, K99.txt.
+
+5. Silakan mendaftar/ mengisi masing-masing berkas dengan SATU nama anggota (akunGitHub).
+== Awas RACE CONDITION!
+
+6. Setelah setiap kelompok beranggota 1, melalui WA akan diumumkan untuk menambahkan anggota kedua.
+
+7. Setelah setiap kelompok beranggota 2, melalui WA akan diumumkan untuk menambahkan anggota ke tiga dan ke empat.
+
+8. Setelah semua kelompok beranggota empat (4), dipersilakan melakukan penambahain/pengurangan anggota selanjutnya secara BEBAS.
+
+9. Keluar/Transfer/Pindah kelompok hanya diizinkan selama sisa anggota kelompok tersebut sekurangnya 4 (empat).
+== PROSEDUR: hapus dahulu keanggotaan lama, baru mendaftar ke kelompok lainnya.
+
+10. Jika dianggap perlu, jumlah kelompok akan ditambah.
+
+11. Yang terlampat, masuk ke kelompok K60an.
+
+
+JT!
+
