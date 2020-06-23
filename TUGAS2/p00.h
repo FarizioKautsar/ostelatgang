@@ -8,6 +8,16 @@
 #define P02 "./p02"
 #define P03 "./p03"
 
+#define P04 "./p04"
+#define P05 "./p05"
+#define P06 "./p06"
+#define P07 "./p07"
+
+#define P08 "./p08"
+#define P09 "./p09"
+#define P10 "./p10"
+#define P11 "./p11"
+
 #include <fcntl.h>
 #include <semaphore.h>
 #include <stdbool.h>

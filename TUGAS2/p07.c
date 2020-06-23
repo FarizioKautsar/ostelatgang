@@ -4,8 +4,8 @@
  */
 
 // adjust DELAY and akunGitHub
-#define  DELAY 1
-#define  akunGitHub "andrewtheodore"
+#define  DELAY 6
+#define  akunGitHub "raularrafi"
 #include "p00.h"
 
 char*    progs[]={P01, P02, P03};
@@ -41,6 +41,7 @@ int getEntry(void) {
     sem_post(&(mymap -> mutex));
     return entry;
 }
+
 
 void display(int entry) {
     // display an entry of MMAP. Eg.
