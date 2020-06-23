@@ -25,7 +25,6 @@ int init(void) {
 }
 
 char tmpStr[256]={};  // a temporary string.
-
 void myprint(char* str1, char* str2) {
     printf("%s[%s]\n", str1, str2);
     // blah blah blah

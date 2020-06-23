@@ -22,7 +22,6 @@ int init(void) {
     mymap -> mutexctr = 0;
     sem_init (&mymap -> mutex, 0, 1);
     close(fd);
-
     //  more INIT STUFFs...
     //  more INIT STUFFs...
     //  more INIT STUFFs...
@@ -46,7 +45,6 @@ int getEntry(void) {
     sem_post(&(mymap -> mutex));
     return entry;
 }
-
 void display(int entry) {
     // display an entry of MMAP. Eg.
     // akunGH2[progs[03] TIME[18] MUTEX[05] MMAP[OPEN] [akunGH1][akunGH3][akunGH0][akunGH2]]
@@ -81,6 +79,18 @@ void checkOpen(void) {
     }
 }
 
+void delay(int number_of_seconds) 
+{ 
+    // Converting time into milli_seconds 
+    int milli_seconds = 1000 * number_of_seconds; 
+  
+    // Storing start time 
+    clock_t start_time = clock(); 
+  
+    // looping till required time is not achieved 
+    while (clock() < start_time + milli_seconds) 
+        ; 
+} 
 int main(void) {
     sprintf(tmpStr, "START PID[%d] PPID[%d]", getpid(), getppid());
     myprint(akunGitHub, tmpStr);
@@ -119,5 +129,6 @@ int main(void) {
     // blah... blah... blah...
     // blah... blah... blah...
     myprint(akunGitHub, "BYEBYE =====  ===== =====");
+	delay(3);
 }
 
