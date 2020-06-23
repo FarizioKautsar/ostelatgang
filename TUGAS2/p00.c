@@ -4,16 +4,17 @@
  */
 
 // adjust DELAY and akunGitHub
-#define  DELAY 5
-#define  akunGitHub "akunGH0"
+#define  DELAY 8
+#define  akunGitHub "WillySand"
 #include "p00.h"
-
 char*    progs[]={P01, P02, P03};
 myshare* mymap;
-
+time_t seconds;
 int init(void) {
     int ssize=sizeof(myshare);
     int fd   =open(SHAREMEM, MYFLAGS, CHMOD);
+	seconds = time(NULL);
+
     fchmod   (fd, CHMOD);
     ftruncate(fd, ssize);
     mymap=mmap(NULL, ssize, MYPROTECTION, MYVISIBILITY, fd, 0);
@@ -31,7 +32,11 @@ void myprint(char* str1, char* str2) {
     // blah blah blah
     // blah blah blah
 }
-
+int getDuration(void){
+	time_t secondsNow;
+	secondsNow = time(NULL);
+	return (int)(secondsNow-seconds);
+}
 int getEntry(void) {
     int entry;
     // get an entry number
@@ -41,6 +46,7 @@ int getEntry(void) {
 void display(int entry) {
     // display an entry of MMAP. Eg.
     // akunGH2[progs[03] TIME[18] MUTEX[05] MMAP[OPEN] [akunGH1][akunGH3][akunGH0][akunGH2]]
+	printf("%s[progs[%d] TIME[%d] MUTEX[%d] MMAP[%s] [%s][%s][%s][%s]]\n",akunGitHub, 999 ,getDuration(),999, "CLOPEN","AAA","BBB","CCC","DDD");
 }
 
 void putInfo(char* akun, int entry) {
@@ -57,6 +63,7 @@ int main(void) {
     int boss=init();
     checkOpen();
     sleep (DELAY);
+	display(0);
     // blah... blah... blah...
     // blah... blah... blah...
     // blah... blah... blah...
