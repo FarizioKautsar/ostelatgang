@@ -18,7 +18,10 @@ int init(void) {
     fchmod   (fd, CHMOD);
     ftruncate(fd, ssize);
     mymap=mmap(NULL, ssize, MYPROTECTION, MYVISIBILITY, fd, 0);
-    
+    if (mymap == MAP_FAILED) {
+        printf("No 'SharedMemoryFile.bin' file.\n");
+        exit(1);
+    }
     close(fd);
     // blah blah blah
     return NOTBOSS;
@@ -70,8 +73,8 @@ void putInfo(char* akun, int entry) {
 }
 
 void checkOpen(void) {
-    if (mymap == MAP_FAILED) {
-        printf("No 'SharedMemoryFile.bin' file.\n");
+    if (mymap -> state == CLOSED) {
+        printf("CLOSED, BYE BYE ==== ====\n");
         exit(1);
     }
 }
