@@ -1,17 +1,157 @@
-Script started on 2020-06-24 03:21:16+0700
+Script started on 2020-06-24 03:49:05+0700
 ]0;theodore@theodore: ~/Documents/Semester 4/OS/UAS/ostelatgang/TUGAS2[01;32mtheodore@theodore[00m:[01;34m~/Documents/Semester 4/OS/UAS/ostelatgang/TUGAS2[00m$ PS1="$ "
 $ echo $akunGitHub
 andrewtheodore
 $ date
-Rab Jun 24 03:21:26 WIB 2020
+Rab Jun 24 03:49:10 WIB 2020
 $ echo $PSTAMP
 TMP1="$(date +%y%m%d-%H%M%S)"; TMP2="$(sleep 1;echo $TMP1-$akunGitHub-${PWD##*/}|sha1sum|cut -c1-4)"; echo "$TMP1-$TMP2-${PWD##*/}/> ";
 $ PS1="\$(eval \$PSTAMP)"
-200624-032131-104d-TUGAS2/> make clean
-rm -f p00 p10 p03 p04 p05 p07 p08 p09 p01 p11 p06 p02 SharedMemoryFile.bin
-200624-032134-be46-TUGAS2/> ./p00
+200624-034914-6daf-TUGAS2/> make clean
+rm -f p00 p10 p03 p04 p05 p07 p08 p01 p11 p09 p06 p02 SharedMemoryFile.bin
+200624-034916-1cc5-TUGAS2/> ./p00
 bash: ./p00: No such file or directory
-200624-032138-ad23-TUGAS2/> exit
+200624-034919-59d1-TUGAS2/> make
+gcc -std=gnu11 -pthread    p00.c p00.h   -o p00
+gcc -std=gnu11 -pthread    p10.c p00.h   -o p10
+gcc -std=gnu11 -pthread    p03.c p00.h   -o p03
+gcc -std=gnu11 -pthread    p04.c p00.h   -o p04
+gcc -std=gnu11 -pthread    p05.c p00.h   -o p05
+gcc -std=gnu11 -pthread    p07.c p00.h   -o p07
+gcc -std=gnu11 -pthread    p08.c p00.h   -o p08
+gcc -std=gnu11 -pthread    p09.c p00.h   -o p09
+gcc -std=gnu11 -pthread    p01.c p00.h   -o p01
+gcc -std=gnu11 -pthread    p11.c p00.h   -o p11
+gcc -std=gnu11 -pthread    p06.c p00.h   -o p06
+gcc -std=gnu11 -pthread    p02.c p00.h   -o p02
+200624-034922-8de4-TUGAS2/> ./p01
+andrewtheodore[START PID[8680] PPID[8528]]
+No 'SharedMemoryFile.bin' file.
+200624-034927-bb4f-TUGAS2/> ./p02
+Belaady[START PID[8697] PPID[8528]]
+No 'SharedMemoryFile.bin' file.
+200624-034948-3dda-TUGAS2/> ./p03
+tolhassianipar[START PID[8708] PPID[8528]]
+No 'SharedMemoryFile.bin' file.
+200624-034955-e9ae-TUGAS2/> ./p04
+stephenhandiar[START PID[8726] PPID[8528]]
+No 'SharedMemoryFile.bin' file.
+200624-035016-cd63-TUGAS2/> ./p05
+109119[START PID[8745] PPID[8528]]
+No 'SharedMemoryFile.bin' file.
+200624-035023-2edd-TUGAS2/> ./p06
+ramyazhar[START PID[8764] PPID[8528]]
+No 'SharedMemoryFile.bin' file.
+200624-035029-6d36-TUGAS2/> ./p07
+raularrafi[START PID[8781] PPID[8528]]
+No 'SharedMemoryFile.bin' file.
+200624-035038-69ab-TUGAS2/> ./p08
+leleonardo81[START PID[8794] PPID[8528]]
+No 'SharedMemoryFile.bin' file.
+200624-035043-92b7-TUGAS2/> ./p09
+marcelvaldhano[START PID[8803] PPID[8528]]
+No 'SharedMemoryFile.bin' file.
+200624-035050-f5e9-TUGAS2/> ./p10
+FarizioKautsar[START PID[8814] PPID[8528]]
+No 'SharedMemoryFile.bin' file.
+200624-035055-3617-TUGAS2/> ./p11
+dariantexanditama[START PID[8824] PPID[8528]]
+No 'SharedMemoryFile.bin' file.
+200624-035103-d6a9-TUGAS2/> ./p00
+WillySand[START PID[8836] PPID[8528]]
+andrewtheodore[START PID[8837] PPID[8836]]
+Belaady[START PID[8838] PPID[8836]]
+stephenhandiar[START PID[8840] PPID[8836]]
+tolhassianipar[START PID[8839] PPID[8836]]
+ramyazhar[START PID[8842] PPID[8836]]
+109119[START PID[8841] PPID[8836]]
+dariantexanditama[START PID[8847] PPID[8836]]
+FarizioKautsar[START PID[8846] PPID[8836]]
+leleonardo81[START PID[8844] PPID[8836]]
+raularrafi[START PID[8843] PPID[8836]]
+marcelvaldhano[START PID[8845] PPID[8836]]
+andrewtheodore[progs[0] TIME[2] MUTEX[2] MMAP[OPEN] []]
+leleonardo81[progs[1] TIME[4] MUTEX[2] MMAP[OPEN] [][]]
+WillySand[progs[2] TIME[6] MUTEX[2] MMAP[OPEN] [][][]]
+andrewtheodore[progs[0] TIME[8] MUTEX[4] MMAP[OPEN] [andrewtheodore][][]]
+Belaady[progs[3] TIME[10] MUTEX[2] MMAP[OPEN] [andrewtheodore][][][]]
+ramyazhar[progs[4] TIME[12] MUTEX[2] MMAP[OPEN] [andrewtheodore][][][][]]
+FarizioKautsar[progs[5] TIME[14] MUTEX[2] MMAP[OPEN] [andrewtheodore][][][][][]]
+leleonardo81[progs[1] TIME[16] MUTEX[4] MMAP[OPEN] [andrewtheodore][leleonardo81][][][][]]
+marcelvaldhano[progs[6] TIME[18] MUTEX[2] MMAP[OPEN] [andrewtheodore][leleonardo81][][][][][]]
+andrewtheodore[progs[0] TIME[19] MUTEX[5] MMAP[OPEN] [andrewtheodore][leleonardo81][][][][][]]
+andrewtheodore[BYEBYE =====  ===== =====]
+tolhassianipar[progs[7] TIME[21] MUTEX[2] MMAP[OPEN] [andrewtheodore][leleonardo81][][][][][][]]
+109119[progs[8] TIME[23] MUTEX[2] MMAP[OPEN] [andrewtheodore][leleonardo81][][][][][][][]]
+dariantexanditama[progs[9] TIME[25] MUTEX[2] MMAP[OPEN] [andrewtheodore][leleonardo81][][][][][][][][]]
+leleonardo81[progs[1] TIME[26] MUTEX[5] MMAP[OPEN] [andrewtheodore][leleonardo81][][][][][][][][]]
+leleonardo81[BYEBYE =====  ===== =====]
+Belaady[progs[3] TIME[28] MUTEX[4] MMAP[OPEN] [andrewtheodore][leleonardo81][][Belaady][][][][][][]]
+ramyazhar[progs[4] TIME[30] MUTEX[4] MMAP[OPEN] [andrewtheodore][leleonardo81][][Belaady][ramyazhar][][][][][]]
+FarizioKautsar[progs[5] TIME[32] MUTEX[4] MMAP[OPEN] [andrewtheodore][leleonardo81][][Belaady][ramyazhar][FarizioKautsar][][][][]]
+marcelvaldhano[progs[6] TIME[34] MUTEX[4] MMAP[OPEN] [andrewtheodore][leleonardo81][][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][][][]]
+stephenhandiar[progs[10] TIME[36] MUTEX[2] MMAP[OPEN] [andrewtheodore][leleonardo81][][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][][][][]]
+WillySand[progs[2] TIME[38] MUTEX[4] MMAP[OPEN] [andrewtheodore][leleonardo81][WillySand][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][][][][]]
+Belaady[progs[3] TIME[39] MUTEX[5] MMAP[OPEN] [andrewtheodore][leleonardo81][WillySand][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][][][][]]
+Belaady[BYEBYE =====  ===== =====]
+tolhassianipar[progs[7] TIME[41] MUTEX[4] MMAP[OPEN] [andrewtheodore][leleonardo81][WillySand][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][tolhassianipar][][][]]
+ramyazhar[progs[4] TIME[42] MUTEX[5] MMAP[OPEN] [andrewtheodore][leleonardo81][WillySand][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][tolhassianipar][][][]]
+ramyazhar[BYEBYE =====  ===== =====]
+109119[progs[8] TIME[44] MUTEX[4] MMAP[OPEN] [andrewtheodore][leleonardo81][WillySand][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][tolhassianipar][109119][][]]
+dariantexanditama[progs[9] TIME[46] MUTEX[4] MMAP[OPEN] [andrewtheodore][leleonardo81][WillySand][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][tolhassianipar][109119][dariantexanditama][]]
+FarizioKautsar[progs[5] TIME[47] MUTEX[5] MMAP[OPEN] [andrewtheodore][leleonardo81][WillySand][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][tolhassianipar][109119][dariantexanditama][]]
+FarizioKautsar[BYEBYE =====  ===== =====]
+raularrafi[progs[11] TIME[49] MUTEX[2] MMAP[OPEN] [andrewtheodore][leleonardo81][WillySand][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][tolhassianipar][109119][dariantexanditama][][]]
+marcelvaldhano[progs[6] TIME[50] MUTEX[5] MMAP[OPEN] [andrewtheodore][leleonardo81][WillySand][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][tolhassianipar][109119][dariantexanditama][][]]
+marcelvaldhano[BYEBYE =====  ===== =====]
+stephenhandiar[progs[10] TIME[52] MUTEX[4] MMAP[OPEN] [andrewtheodore][leleonardo81][WillySand][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][tolhassianipar][109119][dariantexanditama][stephenhandiar][]]
+tolhassianipar[progs[7] TIME[53] MUTEX[5] MMAP[OPEN] [andrewtheodore][leleonardo81][WillySand][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][tolhassianipar][109119][dariantexanditama][stephenhandiar][]]
+tolhassianipar[BYEBYE =====  ===== =====]
+109119[progs[8] TIME[54] MUTEX[5] MMAP[OPEN] [andrewtheodore][leleonardo81][WillySand][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][tolhassianipar][109119][dariantexanditama][stephenhandiar][]]
+109119[BYEBYE =====  ===== =====]
+dariantexanditama[progs[9] TIME[55] MUTEX[5] MMAP[OPEN] [andrewtheodore][leleonardo81][WillySand][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][tolhassianipar][109119][dariantexanditama][stephenhandiar][]]
+dariantexanditama[BYEBYE =====  ===== =====]
+WillySand[progs[2] TIME[56] MUTEX[5] MMAP[OPEN] [andrewtheodore][leleonardo81][WillySand][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][tolhassianipar][109119][dariantexanditama][stephenhandiar][]]
+raularrafi[progs[11] TIME[58] MUTEX[4] MMAP[OPEN] [andrewtheodore][leleonardo81][WillySand][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][tolhassianipar][109119][dariantexanditama][stephenhandiar][raularrafi]]
+stephenhandiar[progs[10] TIME[59] MUTEX[5] MMAP[OPEN] [andrewtheodore][leleonardo81][WillySand][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][tolhassianipar][109119][dariantexanditama][stephenhandiar][raularrafi]]
+stephenhandiar[BYEBYE =====  ===== =====]
+raularrafi[progs[11] TIME[60] MUTEX[5] MMAP[OPEN] [andrewtheodore][leleonardo81][WillySand][Belaady][ramyazhar][FarizioKautsar][marcelvaldhano][tolhassianipar][109119][dariantexanditama][stephenhandiar][raularrafi]]
+raularrafi[BYEBYE =====  ===== =====]
+WillySand[BYEBYE =====  ===== =====]
+200624-035137-0789-TUGAS2/> ./p01
+andrewtheodore[START PID[8941] PPID[8528]]
+CLOSED, BYE BYE ==== ====
+200624-035159-ea00-TUGAS2/> ./p02
+Belaady[START PID[8962] PPID[8528]]
+CLOSED, BYE BYE ==== ====
+200624-035209-6224-TUGAS2/> ./p03
+tolhassianipar[START PID[8984] PPID[8528]]
+CLOSED, BYE BYE ==== ====
+200624-035216-aa2a-TUGAS2/> ./p04
+stephenhandiar[START PID[9003] PPID[8528]]
+CLOSED, BYE BYE ==== ====
+200624-035224-44cf-TUGAS2/> ./p05
+109119[START PID[9024] PPID[8528]]
+CLOSED, BYE BYE ==== ====
+200624-035231-ec7d-TUGAS2/> ./p06
+ramyazhar[START PID[9041] PPID[8528]]
+CLOSED, BYE BYE ==== ====
+200624-035237-1a88-TUGAS2/> ./p07
+raularrafi[START PID[9058] PPID[8528]]
+CLOSED, BYE BYE ==== ====
+200624-035245-65cf-TUGAS2/> ./p08
+leleonardo81[START PID[9078] PPID[8528]]
+CLOSED, BYE BYE ==== ====
+200624-035250-0eb0-TUGAS2/> ./p09
+marcelvaldhano[START PID[9096] PPID[8528]]
+CLOSED, BYE BYE ==== ====
+200624-035256-1229-TUGAS2/> ./p10
+FarizioKautsar[START PID[9116] PPID[8528]]
+CLOSED, BYE BYE ==== ====
+200624-035303-96c1-TUGAS2/> ./p11
+dariantexanditama[START PID[9137] PPID[8528]]
+CLOSED, BYE BYE ==== ====
+200624-035310-3e6c-TUGAS2/> exit
 exit
 
-Script done on 2020-06-24 03:21:52+0700
+Script done on 2020-06-24 03:53:13+0700
